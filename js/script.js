@@ -33,3 +33,21 @@ function slideRight() {
 function updateSlide(container, index, cardWidth) {
   container.style.transform = `translateX(-${index * cardWidth}px)`;
 }
+
+// Função para deslizar automaticamente
+function autoSlide() {
+  slideRight();
+}
+
+// Configura o intervalo para mudar automaticamente
+let slideInterval = setInterval(autoSlide, 3000); // Muda a cada 3 segundos (3000ms)
+
+// Pausa o carrossel ao passar o mouse e retoma ao sair
+const sliderContainer = document.querySelector('.slider-container');
+sliderContainer.addEventListener('mouseenter', () => {
+  clearInterval(slideInterval);
+});
+
+sliderContainer.addEventListener('mouseleave', () => {
+  slideInterval = setInterval(autoSlide, 3000);
+});

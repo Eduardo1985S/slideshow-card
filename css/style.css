@@ -133,3 +133,28 @@
     right: -10px;
   }
   
+
+  /* Estilos do botão */
+  .btn-moderno {
+    padding: 5px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #681413, #e30613);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-moderno:hover {
+    background: linear-gradient(135deg, #e30613, #681413);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-moderno:active {
+    transform: scale(1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

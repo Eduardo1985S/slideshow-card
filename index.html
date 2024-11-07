@@ -1,110 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Slider de Cards com Navegação</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider de Cards com Navegação</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="slider-container">
+      <button class="slider-button prev" onclick="slideLeft()">&#10094;</button>
 
-<div class="slider-container">
-  <button class="slider-button prev" onclick="slideLeft()">&#10094;</button>
-  
-  <div class="card-slider">
-    <div class="cards">
-      <!-- Card 1 -->
-      <div class="card">
-        <img src="image1.jpg" alt="Imagem do artigo">
-        <div class="card-content">
-          <span class="tag technology">Technology</span>
-          <h3>Why is the Tesla Cybertruck designed the way it is?</h3>
-          <p>An exploration into the truck's polarising design.</p>
-          <div class="author">
-            <img src="author1.jpg" alt="Foto do autor">
-            <div class="author-info">
-              <h4>July Dec</h4>
-              <small>2h ago</small>
+      <div class="card-slider">
+        <div class="cards">
+          <!-- Card 1 -->
+          <div class="card">
+            <img src="./img/image.png" alt="Imagem do artigo" />
+            <div class="card-content">
+              <span class="tag technology">Technology</span>
+              <h3>Why is the Tesla Cybertruck designed the way it is?</h3>
+              <p>An exploration into the truck's polarising design.</p>
+              <div class="author">
+                <img src="./img/gumball.jpg" alt="Foto do autor" />
+                <div class="author-info">
+                  <h4>July Dec</h4>
+                  <small>2h ago</small>
+                </div>
+              </div>
+              <button class="btn-moderno">Clique Aqui</button>
             </div>
           </div>
-        </div>
-      </div>
-      
-      <!-- Card 2 -->
-      <div class="card">
-        <img src="image2.jpg" alt="Imagem do artigo">
-        <div class="card-content">
-          <span class="tag popular">Popular</span>
-          <h3>How to Keep Going When You Don't Know What's Next</h3>
-          <p>The future can be scary, but there are ways to deal with that fear.</p>
-          <div class="author">
-            <img src="author2.jpg" alt="Foto do autor">
-            <div class="author-info">
-              <h4>Eyup Ucmaz</h4>
-              <small>Yesterday</small>
+
+          <!-- Card 2 -->
+          <div class="card">
+            <img src="./img/image.png" alt="Imagem do artigo" />
+            <div class="card-content">
+              <span class="tag technology">Technology</span>
+              <h3>Why is the Tesla Cybertruck designed the way it is?</h3>
+              <p>An exploration into the truck's polarising design.</p>
+              <div class="author">
+                <img src="./img/gumball.jpg" alt="Foto do autor" />
+                <div class="author-info">
+                  <h4>July Dec</h4>
+                  <small>2h ago</small>
+                </div>
+              </div>
+              <button class="btn-moderno">Clique Aqui</button>
             </div>
           </div>
+
+          <!-- Card 3 -->
+          <div class="card">
+            <img src="./img/image.png" alt="Imagem do artigo" />
+            <div class="card-content">
+              <span class="tag technology">Technology</span>
+              <h3>Why is the Tesla Cybertruck designed the way it is?</h3>
+              <p>An exploration into the truck's polarising design.</p>
+              <div class="author">
+                <img src="./img/gumball.jpg" alt="Foto do autor" />
+                <div class="author-info">
+                  <h4>July Dec</h4>
+                  <small>2h ago</small>
+                </div>
+              </div>
+              <button class="btn-moderno">Clique Aqui</button>
+            </div>
+          </div>
+
+          <!-- Card 4 (Adicional) -->
+          <div class="card">
+            <img src="./img/image.png" alt="Imagem do artigo" />
+            <div class="card-content">
+              <span class="tag technology">Technology</span>
+              <h3>Why is the Tesla Cybertruck designed the way it is?</h3>
+              <p>An exploration into the truck's polarising design.</p>
+              <div class="author">
+                <img src="./img/gumball.jpg" alt="Foto do autor" />
+                <div class="author-info">
+                  <h4>July Dec</h4>
+                  <small>2h ago</small>
+                </div>
+              </div>
+              <button class="btn-moderno">Clique Aqui</button>
+            </div>
+          </div>
+
+          <!-- Card 5 (Adicional) -->
+          <div class="card">
+            <img src="./img/image.png" alt="Imagem do artigo" />
+            <div class="card-content">
+              <span class="tag technology">Technology</span>
+              <h3>Why is the Tesla Cybertruck designed the way it is?</h3>
+              <p>An exploration into the truck's polarising design.</p>
+              <div class="author">
+                <img src="./img/gumball.jpg" alt="Foto do autor" />
+                <div class="author-info">
+                  <h4>July Dec</h4>
+                  <small>2h ago</small>
+                </div>
+              </div>
+              <button class="btn-moderno">Clique Aqui</button>
+            </div>
+          </div>
+
+          <!-- Adicione mais cards conforme necessário -->
         </div>
       </div>
 
-      <!-- Card 3 -->
-      <div class="card">
-        <img src="image3.jpg" alt="Imagem do artigo">
-        <div class="card-content">
-          <span class="tag design">Design</span>
-          <h3>10 Rules of Dashboard Design</h3>
-          <p>Dashboard Design Guidelines</p>
-          <div class="author">
-            <img src="author3.jpg" alt="Foto do autor">
-            <div class="author-info">
-              <h4>Carrie Brewer</h4>
-              <small>1w ago</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Card 4 (Adicional) -->
-      <div class="card">
-        <img src="image4.jpg" alt="Imagem do artigo">
-        <div class="card-content">
-          <span class="tag technology">Technology</span>
-          <h3>The Next Big Thing in Tech</h3>
-          <p>How technology is shaping the future of our world.</p>
-          <div class="author">
-            <img src="author4.jpg" alt="Foto do autor">
-            <div class="author-info">
-              <h4>John Doe</h4>
-              <small>3d ago</small>
-            </div>
-          </div>
-        </div>
-      </div>
-
-       <!-- Card 5 (Adicional) -->
-       <div class="card">
-        <img src="image5.jpg" alt="Imagem do artigo">
-        <div class="card-content">
-          <span class="tag technology">Technology</span>
-          <h3>The Next Big Thing in Tech</h3>
-          <p>How technology is shaping the future of our world.</p>
-          <div class="author">
-            <img src="author5.jpg" alt="Foto do autor">
-            <div class="author-info">
-              <h4>John Doe</h4>
-              <small>3d ago</small>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Adicione mais cards conforme necessário -->
+      <button class="slider-button next" onclick="slideRight()">
+        &#10095;
+      </button>
     </div>
-  </div>
-  
-  <button class="slider-button next" onclick="slideRight()">&#10095;</button>
-</div>
 
-<script src="script.js"></script>
-</body>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
